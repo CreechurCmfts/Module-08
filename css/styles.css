@@ -60,7 +60,7 @@ nav li a {
 }
 
 /* Style rules for contact content */
-#contact {
+#contact, #rental h2 {
     text-align: center;
 }
 
@@ -89,6 +89,34 @@ nav li a {
     border: 5px solid #373684;
     height: 50% ;
     width: 95% ;
+}
+/* Style rules for table */
+table {
+   border: 1px solid #373684;
+   border-collapse: collapse;
+   margin: 0 auto;
+   width: 100%;
+}
+
+caption {
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 1%;
+}
+
+th, td {
+   border: 1px solid #373684;
+   padding: 2%;
+}
+
+th {
+   background-color: #373684;
+   color: #fff;
+   font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+   background-color: #b7b7e1;
 }
 
 /* Style rules for lessons content */
@@ -222,7 +250,7 @@ map {
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px), print {
-    /* Desktop Viewport: Style rule fo header */
+    /* Desktop Viewport: Style rule for header */
     header {
         padding: 2%;
     }
@@ -250,7 +278,7 @@ map {
         margin-top: 0 ;
         margin-bottom: 0;
         margin-left: 2%;
-        margin-right: 2%;
+        ]margin-right: 2%;
     }
 	grid {
 		grid-template-columns: auto auto auto auto;
@@ -267,4 +295,9 @@ map {
         background-color: #fff;
         color: #000;
     }
+	/* Desktop Viewport: Style rules for table */
+	table {
+		width: 70%;
+	}
+	
 }
